@@ -62,9 +62,12 @@ int main()
     {
     // ! Functions 
     array<int, 5> arr = {1,2,3};
-    cout<<arr.size()<<"\n"; // ! => Gives size of array 
-    cout<<arr.front()<<"\n"; // ! => Gives first element or arr.at(0)
-    cout<<arr.back();  // ! => Gives last element or arr.at(arr.size() - 1)
+    // cout<<arr.size()<<"\n"; // ! => Gives size of array in number => 5
+    // cout<<arr.front()<<"\n"; // ! => Gives first element or arr.at(0)
+    // cout<<arr.back();  // ! => Gives last element or arr.at(arr.size() - 1)
+
+    
+    
     }
 
     {
@@ -75,6 +78,47 @@ int main()
         // ! Outside int main()
         // ! int arr[10000000] => 10^7
         // ! bool arr[100000000] => 10^8
+    }
+
+    {
+        array<int, 5>arr = {1,2,3,3,5};
+        array<int, 5>brr = {10,20,30,40,50};
+
+        // reverse(arr.begin(),arr.end()); // ! makes array as {5,4,3,2,1}
+
+        // int sum = accumulate(arr.begin(),arr.end(),0); // ! Best Way to sum the array
+        // cout<<sum; // ! => 15
+
+        // swap(arr,brr); // ! arr bcomes => {10,20,30,40,50} , brr bcomes => {1,2,3,4,5}
+                       // ? only possible if size of both arrays is same else not possible
+
+        // int co = count(arr.begin(),arr.end(),3); // ! count no. of occurences
+        // cout<<co;
+
+
+    
+         /*
+    *    This gives incorrect output
+    *    int sum = 0;
+    *    accumulate(arr.begin(),arr.end(),sum);
+    *    cout<<sum; => 0
+        */
+
+
+    
+
+    }
+
+    {
+        array<int, 5>arr = {1,2,3,4,5};
+         
+
+        
+
+        
+
+
+
     }
     
     

@@ -3,6 +3,7 @@ using namespace std;
 int main()
 {
     int arr[] = {1,2,3};
+    
 
     // ! Modifications using for each loop
     for(auto &x: arr)

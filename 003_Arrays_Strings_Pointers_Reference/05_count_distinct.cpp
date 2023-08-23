@@ -7,6 +7,11 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]);
     int count = 0;
     int flag = 1;
+
+    // ! Compare each element with previous elements 
+    // ! If found equal then don't increment count and break directly
+    // ! if none element found equal then increment counter
+
     for (int i = 0; i < n; i++)
     {
         flag = 1;
