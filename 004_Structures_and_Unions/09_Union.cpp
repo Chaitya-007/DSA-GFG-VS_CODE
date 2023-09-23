@@ -11,6 +11,7 @@ union test
 int main()
 {
     cout<<sizeof(test)<<"\n";
+
     union test t;
     t.x = 10;
     cout<<t.x<<" "<<t.y<<"\n";
